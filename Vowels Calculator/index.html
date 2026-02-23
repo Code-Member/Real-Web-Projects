@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vowels Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1>Vowels Calculator</h1>
+        <p>Type text below to count vowels instantly.</p>
+
+        <label for="text-input">Enter text</label>
+        <textarea
+          id="text-input"
+          placeholder="Write something text..."
+          rows="8"
+        ></textarea>
+
+        <div class="actions">
+          <button id="count-btn" type="button">Count Vowels</button>
+          <button id="clear-btn" type="button" class="secondary">Clear</button>
+        </div>
+
+        <div class="result-grid">
+          <article class="result-box">
+            <h2>Total Vowels</h2>
+            <p id="total-vowels">0</p>
+          </article>
+          <article class="result-box">
+            <h2>Total Characters</h2>
+            <p id="total-characters">0</p>
+          </article>
+        </div>
+
+        <ul class="vowel-breakdown">
+          <li>A: <span id="count-a">0</span></li>
+          <li>E: <span id="count-e">0</span></li>
+          <li>I: <span id="count-i">0</span></li>
+          <li>O: <span id="count-o">0</span></li>
+          <li>U: <span id="count-u">0</span></li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
