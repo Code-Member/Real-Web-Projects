@@ -7,7 +7,7 @@ app.use(express.static("public"));
 
 let tasks = [];
 
-// arrays list of js
+// arrays list of js names 
 
 app.get("/", (req, res) => {
   res.render("index", { tasks });
